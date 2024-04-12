@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 {
   /* <div>
   <div>
@@ -14,7 +17,7 @@ const hello = React.createElement("h1", {}, "Hello, React!");
 
 const hello2 = React.createElement("div", {}, [
   React.createElement("div", {}, [
-    React.createElement("h1", {}, "Hello, React!"),
+    React.createElement("h1", {}, "Hello, React! behencho"),
     React.createElement("h2", {}, "Good to see you!"),
   ]),
   React.createElement("div", {}, [
