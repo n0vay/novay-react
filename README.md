@@ -1,6 +1,6 @@
 Yoo Wassup
 
-# Parcel
+# Parcel Bundler
 - Dev Build
 - Local Server
 - HMR : Hot Module Replacement
