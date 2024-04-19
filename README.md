@@ -16,3 +16,13 @@ Yoo Wassup
 - HTTPS support
 - Tree Shaking - remove unsused code from build
 - Different build for dev and production
+
+
+# Basic Layout
+// Header Component - Logo, nav
+// Body Component - Search, Results, Resturant Cards
+// Footer Component - Socials, Contact, CopyRight
+
+# Two types of import export
+- Default : export default FxName : import FxName from "./utils"
+- Named : export FxName : import {FxName} from "./utils"
