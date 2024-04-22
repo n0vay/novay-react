@@ -26,3 +26,5 @@ Yoo Wassup
 # Two types of import export
 - Default : export default FxName : import FxName from "./utils"
 - Named : export FxName : import {FxName} from "./utils"
+
+# Whenever state variable changes, react triggers reconcilliation cycle
