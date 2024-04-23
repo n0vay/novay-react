@@ -28,3 +28,7 @@ Yoo Wassup
 - Named : export FxName : import {FxName} from "./utils"
 
 # Whenever state variable changes, react triggers reconcilliation cycle
+
+# Use efffect
+- If no Dependency array, useEffect is called on every render
+- If dependency array is empty, useEffect is called on initial render

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ResturantCard from "./ResturantCard";
+import RestaurantCard from "./RestaurantCard";
 import { RES_URL } from "../utils/constants";
 import Shimmer from "./Shimmer";
 const Body = () => {
@@ -17,7 +17,9 @@ const Body = () => {
     setResData(
       json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
     );
-    setDisplayData(resData);
+    setDisplayData(
+      json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+    );
   };
 
   return resData.length === 0 ? (
@@ -53,10 +55,9 @@ const Body = () => {
         </button>
       </div>
       <div className="resturant-container">
-        {displayData &&
-          displayData.map((resturant) => (
-            <ResturantCard key={resturant.info.id} resData={resturant} />
-          ))}
+        {displayData.map((resturant) => (
+          <RestaurantCard key={resturant.info.id} resData={resturant} />
+        ))}
       </div>
     </div>
   );
