@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/n0vay/novay-react#readme",
   "devDependencies": {
-    "process": "^0.11.10"
+    "postcss": "^8.4.38",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.3"
   },
   "dependencies": {
     "parcel": "^2.12.0",

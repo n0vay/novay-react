@@ -5,23 +5,23 @@ import React from "react";
 const Header = () => {
   const [login, setLogin] = useState(false);
   return (
-    <div className="header">
+    <div className="header flex justify-between shadow-lg m-2">
       <div className="logo-container">
-        <img className="logo" src={LOGO_URL} />
+        <img className="logo w-64 " src={LOGO_URL} />
       </div>
       <div className="nav-items">
-        <ul>
+        <ul className="flex p-4 m-4">
           <Link to="/">
-            <li>Home</li>
+            <li className="p-4">Home</li>
           </Link>
           <Link to="/about">
-            <li>About</li>
+            <li className="p-4">About</li>
           </Link>
           <Link to="/contact">
-            <li>Contact</li>
+            <li className="p-4">Contact</li>
           </Link>
-          <li>Cart</li>
-          <button className="login-btn" onClick={() => setLogin(!login)}>
+          <li className="p-4">Cart</li>
+          <button className="login-btn " onClick={() => setLogin(!login)}>
             {login ? "Logout" : "Login"}
           </button>
         </ul>
