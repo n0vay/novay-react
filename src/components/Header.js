@@ -9,21 +9,21 @@ const Header = () => {
       <div className="logo-container">
         <img className="logo w-64 " src={LOGO_URL} />
       </div>
-      <div className="nav-items">
+      <div className="nav-items flex items-center">
         <ul className="flex p-4 m-4">
           <Link to="/">
-            <li className="p-4">Home</li>
+            <li className="px-4">Home</li>
           </Link>
           <Link to="/grocery">
-            <li className="p-4">Grocery</li>
+            <li className="px-4">Grocery</li>
           </Link>
           <Link to="/about">
-            <li className="p-4">About</li>
+            <li className="px-4">About</li>
           </Link>
           <Link to="/contact">
-            <li className="p-4">Contact</li>
+            <li className="px-4">Contact</li>
           </Link>
-          <li className="p-4">Cart</li>
+          <li className="px-4">Cart</li>
           <button className="login-btn " onClick={() => setLogin(!login)}>
             {login ? "Logout" : "Login"}
           </button>
