@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { RES_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
-import RestaurantCard from "../components/RestaurantCard";
-import Shimmer from "../components/Shimmer";
+import RestaurantCard from "./RestaurantCard";
+import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
