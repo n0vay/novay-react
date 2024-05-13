@@ -1,7 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 
 const ItemList = ({ items }) => {
-  console.log(items);
   return (
     <div>
       {items.map((item) => (
@@ -23,6 +22,9 @@ const ItemList = ({ items }) => {
             <p className="text-xs pr-4">{item.card.info.description}</p>
           </div>
           <div className="w-3/12">
+            <button className="p-2 bg-white absolute shadow-lg rounded-md">
+              Add +
+            </button>
             <img src={CDN_URL + item.card.info.imageId} />
           </div>
         </div>

@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [resData, setResData] = useState([]);
   const [displayData, setDisplayData] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
@@ -36,7 +39,7 @@ const Body = () => {
       </div>
     );
   }
-  console.log(resData);
+  // console.log(resData);
   return resData.length === 0 ? (
     <Shimmer />
   ) : (
@@ -70,6 +73,15 @@ const Body = () => {
           >
             Top Rated Resturants
           </button>
+        </div>
+        <div className="px-2">User Name:</div>
+        <div className="">
+          <input
+            type="text"
+            className="search-box border border-solid border-black"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
       </div>
       <div className="resturant-container flex flex-wrap">
