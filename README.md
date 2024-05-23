@@ -65,3 +65,6 @@ Yoo Wassup
 - Jest also needs extra dependencies and babel.config.js
 - Parcel and jest both use babel and require different config
 - Configure parcel config by adding .parcelrc file to disable babel transpilation
+- write jest config using npx jest --init
+- testing require an environment which is like a browser, called jsdom
+- install jest-environment dom package seperately by npm i -D jest-environment-jsdom
