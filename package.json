@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/n0vay/novay-react#readme",
   "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@testing-library/react": "^15.0.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
     "postcss": "^8.4.38",
     "process": "^0.11.10",
     "tailwindcss": "^3.4.3"
