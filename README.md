@@ -72,3 +72,5 @@ Yoo Wassup
 - install @babel/preset-react to make JSX work in test cases
 - include it into babel config as ["@babel/preset-react", { runtime: "automatic" }]0
 - install npm i -D @testing-library/jest-dom
+- When we do console.log of scren.getby, we get the js object which is rendered onscreen [react element, react fibre node, jsx, virtual dom object]
+- basic layout of testing is render ->  query -> assert
