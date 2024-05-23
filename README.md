@@ -68,3 +68,7 @@ Yoo Wassup
 - write jest config using npx jest --init
 - testing require an environment which is like a browser, called jsdom
 - install jest-environment dom package seperately by npm i -D jest-environment-jsdom
+- create a **test** folder and name the test file same as the file with extention .test.js
+- install @babel/preset-react to make JSX work in test cases
+- include it into babel config as ["@babel/preset-react", { runtime: "automatic" }]0
+- install npm i -D @testing-library/jest-dom
