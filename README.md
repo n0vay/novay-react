@@ -74,3 +74,4 @@ Yoo Wassup
 - install npm i -D @testing-library/jest-dom
 - When we do console.log of scren.getby, we get the js object which is rendered onscreen [react element, react fibre node, jsx, virtual dom object]
 - basic layout of testing is render ->  query -> assert
+- add "watch": "jest --watch" script in package.json to automatically run test cases after every change

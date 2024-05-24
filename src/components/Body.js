@@ -22,6 +22,7 @@ const Body = () => {
   const fetchData = async () => {
     const data = await fetch(RES_URL);
     const json = await data.json();
+    //console.log(json);
     setResData(
       json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
     );
@@ -39,7 +40,7 @@ const Body = () => {
       </div>
     );
   }
-  // console.log(resData);
+
   return resData.length === 0 ? (
     <Shimmer />
   ) : (
@@ -47,6 +48,7 @@ const Body = () => {
       <div className="filter flex items-center">
         <div className="search m-4">
           <input
+            data-testid="searchInput"
             type="text"
             className="search-box border border-solid border-black"
             value={searchText}
